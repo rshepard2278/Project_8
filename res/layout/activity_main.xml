@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rshepard.littleleagueapp.MainActivity" 
+    android:orientation="vertical"
+    android:background="@drawable/gradient_box"
+   >
+
+     <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="5dp">
+        
+		    <TextView
+		        android:id="@+id/home_team"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="@dimen/team_text_top_margin"
+		        android:layout_marginBottom="@dimen/team_text_bottom_margin"
+		        android:layout_marginLeft="@dimen/team_text_left_right_margin"
+		        android:layout_marginRight="@dimen/team_text_left_right_margin"
+		        android:textSize="@dimen/team_text_size"
+		        android:layout_gravity="center"
+		        android:layout_weight="1"
+		        android:text="@string/home"
+		        />
+		    
+		    <TextView
+		        android:id="@+id/visitor_team"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="@dimen/team_text_top_margin"
+		        android:layout_marginBottom="@dimen/team_text_bottom_margin"
+		        android:layout_marginLeft="@dimen/team_text_left_right_margin"
+		        android:layout_marginRight="@dimen/team_text_left_right_margin"
+		        android:textSize="@dimen/team_text_size"
+		        android:layout_gravity="center"
+		        android:layout_weight="1"
+		        android:text="@string/visitor"
+		        />
+		    
+	</LinearLayout>
+	    
+	<LinearLayout
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="5dp">
+        
+        <TextView 
+            android:id="@+id/home_team_score"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="@dimen/team_text_top_margin"
+	        android:layout_marginBottom="@dimen/team_score_bottom_margin"
+	        android:layout_marginLeft="@dimen/team_score_left_right_margin"
+	        android:layout_marginRight="@dimen/team_score_left_right_margin"
+	        android:textSize="@dimen/team_score_size"
+		    android:layout_gravity="center"
+		    android:layout_weight="1"
+		    android:text="@string/home_score"
+            />
+        
+        <TextView 
+            android:id="@+id/visitor_team_score"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="@dimen/team_text_top_margin"
+	        android:layout_marginBottom="@dimen/team_score_bottom_margin"
+	        android:layout_marginLeft="@dimen/team_score_left_right_margin"
+	        android:layout_marginRight="@dimen/team_score_left_right_margin"
+	        android:textSize="@dimen/team_score_size"
+		    android:layout_gravity="center"
+		    android:layout_weight="1"
+		    android:text="@string/visitor_score"
+            />
+        
+ 	</LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="15dp">
+        
+         <TextView
+		        android:id="@+id/strike_count"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="16dp"
+		        android:layout_marginLeft="@dimen/text_margin"
+		        android:layout_marginRight="@dimen/text_margin"
+		        android:textSize="@dimen/text_size"
+		        android:layout_gravity="center"
+		        android:text="@string/default_count"
+		        android:layout_weight="1"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+         
+          <TextView
+		        android:id="@+id/ball_count"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="16dp"
+		        android:layout_marginLeft="@dimen/text_margin"
+		        android:layout_marginRight="@dimen/text_margin"
+		        android:textSize="@dimen/text_size"
+		        android:layout_gravity="center"
+		        android:text="@string/default_count"
+		        android:layout_weight="1"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+          
+           <TextView
+		        android:id="@+id/out_count"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="16dp"
+		        android:layout_marginLeft="@dimen/text_margin"
+		        android:layout_marginRight="@dimen/text_margin"
+		        android:textSize="@dimen/text_size"
+		        android:layout_gravity="center"
+		        android:text="@string/default_count"
+		        android:layout_weight="1"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="15dp">
+        
+         <Button
+	        android:id="@+id/button_strike"
+	        android:background="@drawable/button_selector"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_weight="1"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:text="@string/strike"/>
+         
+          <Button
+	        android:id="@+id/button_ball"
+	        android:background="@drawable/button_selector"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:text="@string/ball" />
+          
+           <Button
+	        android:id="@+id/button_out"
+	        android:background="@drawable/button_selector"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:text="@string/out" />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="15dp">
+        
+        <Button
+	        android:id="@+id/button_run"
+	        android:background="@drawable/button_selector"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_weight="1"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:text="@string/run"/>
+         
+          <Button
+	        android:id="@+id/button_foul"
+	        android:background="@drawable/button_selector"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:text="@string/foul" />
+        
+        
+        
+        
+        
+    </LinearLayout>
+
+    
+</LinearLayout>
